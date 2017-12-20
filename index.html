@@ -9,11 +9,47 @@
 
     <style>
         body{
-            padding-top: 70px;
+            padding-top: 50px;
         }
         #NavBrand{
             font-size: 17px;
             padding-right: 50px;
+        }
+        .carousel{
+            height: 500px;
+            background-color: black;
+        }
+        .carousel .item{
+            height: 500px;
+            background-color: black;
+
+        }
+        .carousel img{
+            width: 100%;
+            height: inherit;
+        }
+
+        .carousel-caption p{
+            margin-bottom: 30px;
+            line-height: 22px;
+
+        }
+        #content1{
+            margin: 60px auto;
+        }
+        #content1 img{
+            width: inherit;
+            height: inherit;
+        }
+        #content1 h2,h3{
+            font-size: 20px;
+        }
+        #content1 .col-md-4,.col-md-8{
+            text-align: center;
+
+        }
+        hr.divider{
+            margin: 30px 0;
         }
 
     </style>
@@ -36,16 +72,16 @@
 
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">轮播</a></li>
-                <li><a href="#">简述</a></li>
+                <li class="active"><a href="#">简介</a></li>
+                <li><a href="#">生平</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">剧情 <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"  aria-expanded="false">剧情 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
+                        <li><a href="#">历程</a></li>
+                        <li role="separator" class="divider"></li>
                         <li><a href="#">低俗小说</a></li>
                         <li><a href="#">无耻混蛋</a></li>
                         <li><a href="#">杀死比尔</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">嗷嗷</a></li>
                     </ul>
                 </li>
                 <li><a href="#">关于</a></li>
@@ -54,13 +90,91 @@
         </div>
     </div>
 </nav>
+<!--轮播-->
+<div id="carouselaa" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselaa" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselaa" data-slide-to="1"></li>
+        <li data-target="#carouselaa" data-slide-to="2"></li>
+    </ol>
 
-<p>
-    aaaaaaaaaaaa
-    aaaaaaa
-    aaaaa
-    aaaaaaa
-</p>
+    <div class="carousel-inner" id="lalala" role="listbox">
+        <div class="item active">
+            <img src="img/71cf3bc79f3df8dca44fff9cc511728b47102848.jpg" alt="img1">
+            <div class="carousel-caption">
+                <h1>无耻混蛋</h1>
+                <p>影片于2009年5月20日在法国戛纳电影节率先放映。电影的故事发生在二战期间，一群犯了罪的美国士兵原本将要被处以死刑，但是非常时期采取非常政策，他们被允许戴罪立功——深入已被纳粹占领的法国去执行一项危险任务，此项任务代号为“基诺行动”。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/d1160924ab18972be91b9683e6cd7b899e510a51.jpg" alt="img2">
+            <div class="carousel-caption">
+                <h1>低俗小说</h1>
+                <p>《低俗小说》是由昆汀·塔伦蒂诺执导，布鲁斯·威利斯、乌玛·瑟曼、约翰·特拉沃塔、阿曼达·普拉莫、蒂姆·罗斯等主演的犯罪电影。影片由6个彼此独立而又紧密相连的故事所构成，6个故事都各自讲述了一个不同的事件，但他们却都有着共同的戏剧属性将它们紧密相连。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/962bd40735fae6cd1126efdf07b30f2443a70ff9.jpg" alt="img3">
+            <div class="carousel-caption">
+                <h1>杀死比尔</h1>
+                <p>《杀死比尔》于2012年5月21日在美国上映，是昆汀·塔伦蒂诺执导，乌玛·瑟曼、大卫·卡拉丁主演的爱情犯罪电影。讲述了暗杀组织首脑比尔的情人准备和一个小伙子结婚。没想到，婚礼当天比尔大开杀戒。新娘昏迷醒来后，要找到参与暗杀的敌人，赶尽杀绝。</p>
+            </div>
+        </div>
+    </div>
+
+
+    <a class="left carousel-control" href="#carouselaa" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carouselaa" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!--分栏-->
+<div class="container" id="content1">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="img/c2fdfc039245d6883c5559b8acc27d1ed21b2453.jpg"/>
+            <h2>昆汀·塔伦蒂诺</h2>
+            <h3>Quentin Tarantino</h3>
+        </div>
+        <div class="col-md-8">
+            <p>1963年3月27日生于美国田纳西州的挪克斯维尔，美国后现代主义导演、编剧、演员、制作人[1]  。
+                1987年，拍摄个人首部喜剧短剧《我最好朋友的生日》。1991年，凭出售《致命浪漫》剧本所得的5万美元，决定开始拍摄自己的第三个剧本《落水狗》。[2]  1994年凭借执导拍摄犯罪剧情电影《低俗小说》获得戛纳影展金棕榈奖，1995年获奥斯卡最佳原著剧本奖，奠定了他的好莱坞地位[3]  。1997年，拍摄惊悚电影《危险关系》。2003年，连续推出《杀死比尔1》和《杀死比尔2 》。2009年拍摄了布拉德·皮特领衔主演的电影《无耻混蛋》。2013年凭借电影《被解救的姜戈》获第85届奥斯卡奖最佳原创剧本奖[4]  。</p>
+        </div>
+    </div>
+    <hr class="divider"/>
+</div>
+<!--标签页-->
+<div class="container">
+
+    <ul class="nav nav-tabs" role="tablist ">
+        <li class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">历程</a></li>
+        <li><a href="#tab-11" aria-controls="profile" role="tab" data-toggle="tab">无耻混蛋</a></li>
+        <li><a href="#tab-22" aria-controls="messages" role="tab" data-toggle="tab">低俗小说</a></li>
+        <li><a href="#tab-33" aria-controls="settings" role="tab" data-toggle="tab">杀死比尔</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab-11">
+
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab-22">
+
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab-33">
+
+        </div>
+    </div>
+
+</div>
+
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script href="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script><script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script href="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
